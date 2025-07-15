@@ -153,9 +153,9 @@
     90deg,
     transparent 0%,
     rgba(255, 255, 255, 0.35) 10%,
-    /* Начинаем позже (10% вместо 20%) */ rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 50%,
     rgba(255, 255, 255, 0.35) 90%,
-    /* Заканчиваем раньше (90% вместо 80%) */ transparent 100%
+    transparent 100%
   ) !important;
   transition: opacity 0.3s ease !important;
 }
@@ -167,7 +167,7 @@
       90deg,
       transparent 0%,
       rgba(255, 255, 255, 0.25) 10%,
-      /* Уменьшил прозрачность */ rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0.3) 50%,
       rgba(255, 255, 255, 0.25) 90%,
       transparent 100%
     ) !important;
@@ -181,7 +181,7 @@
       90deg,
       transparent 0%,
       rgba(0, 0, 0, 0.1) 10%,
-      /* Слегка уменьшил видимость */ rgba(0, 0, 0, 0.15) 50%,
+      rgba(0, 0, 0, 0.15) 50%,
       rgba(0, 0, 0, 0.1) 90%,
       transparent 100%
     ) !important;
@@ -191,4 +191,9 @@
 /* Микроанимация при наведении на панель */
 #navigator-toolbox:hover #TabsToolbar::after {
   opacity: 0.8 !important;
+}
+
+#urlbar-searchmode-switcher {
+  border-radius: 12px !important;
+  appearance: menupopup !important;
 }
